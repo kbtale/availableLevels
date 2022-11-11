@@ -27,14 +27,14 @@
   }
   
   /* Style the tab content */
-  .tabcontent {
+  .tabcontent, .tabcontenti {
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
   }
   
-  .tabcontent {
+  .tabcontent, .tabcontenti {
     animation: fadeEffect .3s ease-in-out; /* Fading effect takes .6 seconds */
   }
   
@@ -48,14 +48,19 @@
     background-color: #ffffff;
     border-collapse: collapse;
     border-width: 2px;
-    border-color: #7aa2ff;
+    border-color: #000000;
     border-style: solid;
     color: #000000;
+    font-family: arial;
   }
   
+  table.GeneratedTable th {
+    font-size: 16px;
+  }
+
   table.GeneratedTable td, table.GeneratedTable th {
     border-width: 2px;
-    border-color: #7aa2ff;
+    border-color: #000;
     border-style: solid;
     padding: 3px;
   }
