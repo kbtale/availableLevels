@@ -5,17 +5,52 @@
 <body>
     <!-- Sections -->
 <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Adultos')" id="default">Adultos</button>
-    <button class="tablinks" onclick="openCity(event, 'Jovenes')">Jóvenes</button>
-    <button class="tablinks" onclick="openCity(event, 'Ninos')">Niños</button>
+    <button class="tablinks" onclick="openCity(event, 'Adultos',false)" id="default">Adultos</button>
+    <button class="tablinks" onclick="openCity(event, 'Jovenes',false)">Jóvenes</button>
+    <button class="tablinks" onclick="openCity(event, 'Ninos',false)">Niños</button>
   </div>
   
   <!-- Content -->
   <div id="Adultos" class="tabcontent">
-    <table class="GeneratedTable">
+    <div class="tab">
+      <button class="tablinksinside" onclick="openCity(event, 'MartesJueves',true)">Martes y Jueves</button>
+      <button class="tablinksinside" onclick="openCity(event, 'MiercolesViernes',true)">Miércoles y Viernes</button>
+      <button class="tablinksinside" onclick="openCity(event, 'Sabatino',true)">Sabatino</button>
+      <button class="tablinksinside" onclick="openCity(event, 'Intensivo',true)">Intensivo</button>
+    </div>
+    <div id="MartesJueves" class="tabcontentinside">
+      <table class="GeneratedTable">
         <thead>
           <tr>
-            <th>Header</th>
+            <th>Frecuencia</th>
+            <th>Nivel</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Martes y Jueves</td>
+            <td>Nivel 1</td>
+            <td>8:30 a.m. - 10:00 a.m.</td>
+          </tr>
+          <tr>
+            <td>Martes y Jueves</td>
+            <td>Nivel 2</td>
+            <td>8:30 a.m. - 10:00 a.m.</td>
+          </tr>
+          <tr>
+            <td>Martes y Jueves</td>
+            <td>Nivel 14</td>
+            <td>4:30 p.m. - 6:00 p.m.</td>
+          </tr>
+        </tbody>
+    </table>
+    </div>
+    <div id="MiercolesViernes" class="tabcontentinside">
+      <table class="GeneratedTable">
+        <thead>
+          <tr>
+            <th>Headeramv</th>
             <th>Header</th>
             <th>Header</th>
           </tr>
@@ -38,6 +73,63 @@
           </tr>
         </tbody>
     </table>
+    </div>
+    <div id="Sabatino" class="tabcontentinside">
+      <table class="GeneratedTable">
+        <thead>
+          <tr>
+            <th>Headersab</th>
+            <th>Header</th>
+            <th>Header</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+          </tr>
+          <tr>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+          </tr>
+          <tr>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+          </tr>
+        </tbody>
+    </table>
+    </div>
+    <div id="Intensivo" class="tabcontentinside">
+      <table class="GeneratedTable">
+        <thead>
+          <tr>
+            <th>Headerint</th>
+            <th>Header</th>
+            <th>Header</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+          </tr>
+          <tr>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+          </tr>
+          <tr>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+          </tr>
+        </tbody>
+    </table>
+    </div>
   </div>
   
   <div id="Jovenes" class="tabcontent">
